@@ -44,15 +44,15 @@ const show = (flowersList, flowersId) => {
 
 const inform = console.log;
 
-const destroy = (flowers, flowerId) => {
-  const index = flowers.findIndex((flower) => flower.id === flowerId);
+const destroy = (flowersList, flowerId) => {
+  const index = flowersList.findIndex((flower) => flower.id === flowerId);
   if (index > -1) {
-    flower.splice(index, 1);
+    flowersList.splice(index, 1);
     inform('flower successfully removed from collection');
-    return flowers;
+    return flowersList;
   } else {
     inform('flower not found. No action taken');
-    return flowers;
+    return flowersList;
   }
 }
 
