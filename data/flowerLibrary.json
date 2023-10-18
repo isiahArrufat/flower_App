@@ -1,71 +1,97 @@
+
 [
-    {
-    "name":"Tulip",
-    "priceInCents":900,
-    "inStock":true,
-    "color":"yellow",
-    "origin":"brazil",
-    "shelfLife":17
-    },
+  {
+    "flower_name": "daffodil",
+    "color":" white",
+    "petal_count": 83,
+    "stem_length": 6.41,
+    "bloom_time": "2/7/2022",
+    "fragrance": true,
+    "sun_exposure": "partial sun",
+    "watering_needs": "low",
+   "soil_type": "clay",
+    "growing_season": "summer"
+  },
+  
+  {
+    "flower_name": "lily",
+    "color":" pink",
+    "petal_count": 42,
+    "stem_length": 3.14,
+    "bloom_time": "11/7/2022",
+    "fragrance": true,
+    "sun_exposure": "partial sun",
+    "watering_needs": "low",
+   " soil_type": "clay",
+    "growing_season": "summer"
+  },
 
-    {
-    "name":"Rose",
-    "priceInCents":110,
-    "inStock":true,
-    "color":"Red",
-    "origin":"Belgium",
-    "shelfLife":12
-    },
+  {
+    "flower_name": "tulip",
+    "color":" purple",
+    "petal_count": 44,
+    "stem_length": 8.24,
+    "bloom_time": "2/3/2022",
+    "fragrance": false,
+    "sun_exposure": "partial sun",
+    "watering_needs": "low",
+   " soil_type": "loamy",
+    "growing_season": "summer"
+  },
 
-    {
-    "name":"Marigold",
-    "priceInCents":130,
-    "inStock":true,
-    "color":"Green",
-    "origin":"Australia",
-    "shelfLife":7
-    },
+  {
+    "flower_name": "orchard",
+    "color":" orange",
+    "petal_count": 68,
+    "stem_length": 46.3,
+    "bloom_time": "9/10/2022",
+    "fragrance": true,
+    "sun_exposure": "partial sun",
+    "watering_needs": "medium",
+   " soil_type": "loamy",
+    "growing_season": "summer"
+  },
 
-    {
-    "name":"Lily",
-    "priceInCents":900,
-    "inStock":true,
-    "color":"orange",
-    "origin":"Canada",
-    "shelfLife":8
-    },
+  {
+    "flower_name": "lavender",
+    "color":" orange",
+    "petal_count": 96,
+    "stem_length": 14.33,
+    "bloom_time": "6/27/2022",
+    "fragrance": false,
+    "sun_exposure": "shade",
+    "watering_needs": "low",
+   " soil_type": "clay",
+    "growing_season": "spring"
+  },
 
-    {
-    "name":"Lavender",
-    "priceInCents":100,
-    "inStock":true,
-    "color":"purple",
-    "origin":"India",
-    "shelfLife":14
-    },
+  {
+    "flower_name": "daisy",
+    "color":" pink",
+    "petal_count": 84,
+    "stem_length": 11.84,
+    "bloom_time": "10/4/2022",
+    "fragrance": true,
+    "sun_exposure": "shade",
+    "watering_needs": "medium",
+    "soil_type": "rocky",
+    "growing_season": "spring"
+  },
 
-    {
-    "name":"sunFlower",
-    "id":"ZyAb",
-    "shelfLife":7
-    },
-
-    {
-     "name":"sunFlower",
-     "id":"R2cy",
-     "shelfLife":7
-    },
-
-    {
-    "name":"sunFlower",
-    "id":"ocm6",
-    "shelfLife":7
-    },
-
-    {
-    "name":"Tulip",
-    "id":"6vPC",
-    "shelfLife":17
-    }
+  {
+    "flower_name": "sunflower",
+    "color":" orange",
+    "petal_count": 63,
+    "stem_length": 39.11,
+    "bloom_time": "6/23/2022",
+    "fragrance": true,
+    "sun_exposure": "shade",
+    "watering_needs": "low",
+    "soil_type": "clay",
+    "growing_season": "fall"
+  }
 ]
+
+
+
 
