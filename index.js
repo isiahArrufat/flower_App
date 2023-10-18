@@ -1,6 +1,6 @@
 const { readJSONFile, writeJSONFile } = require('./src/helpers');
-const flowers = readJSONFile('./data', 'flowerLibary.json');
-const { create, index, destroy, edit, score, } = require('./src/flowersController');
+const flowers = readJSONFile('./data', 'flowersList.json');
+const { create, index, show, destroy, edit, score, } = require('./src/flowersController');
 const inform = console.log;
 
 
@@ -23,7 +23,7 @@ const run = () => {
         break;
     case "show":
         const flowerView = show(flowers, flower);
-      inform(flowersView);
+      inform(flowerView);
         break;
     case "update":
         updatedFlowers = edit(flowers, flower, process.argv[4]);
@@ -40,7 +40,7 @@ const run = () => {
       inform('There was an error.');
   }
   if (writeToFile) {
-    writeJSONFile('./data', 'flowerLibary.json', updatedFlowers);
+    writeJSONFile('./data', 'flowersList.json', updatedFlowers);
   }
 }
 

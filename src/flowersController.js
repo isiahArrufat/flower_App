@@ -1,37 +1,44 @@
 const { nanoid } = require('nanoid');
-const flower = require('../data/flowersList.json');
-const flowers = require('../data/flowerLibary.json');
+const flowerLibrary = require('../data/flowerLibrary.json');
 
 
 
 
-const create = (flowers, flowerName) => {
-    const flowerIndex = flowers.findIndex((flower) => flower.name === flowerName);
 
-    if (flowerIndex !== -1) {
-        const flower = { 
+
+const create = (flowersList, flowerName) => {
+    
+    const existingFlower = flowerLibrary.find((flower) => flower.name === flowerName);
+    
+console.log(existingFlower);
+
+    if (existingFlower) {
+        existingFlower.id = nanoid(4)
+      flowersList.push(existingFlower)
+    }else {
+        const newFlower = {
             name: flowerName,
             id: nanoid(4),
-            shelfLife: flowers[flowerIndex].shelfLife || 7
-        };
-        flowers.push(flower);
-    } else {
-        inform('Flower not found. No action taken');
+            shelfLife: 7
+          };
+        
+          flowersList.push(newFlower);
+         
     }
-
-    return flowers;
+    return flowersList;
 }
-
+  
+   
     
 
 
 
-const index = (flowers) => {
-    return flowers.map((flower) => flower.id + ' ' + flower.name).join('\n');
+const index = (flowersList) => {
+    return flowersList.map((flower) => flower.id + ' ' + flower.name).join('\n');
   }
 
-const show = (flowers, flowersId) => {
-    const animal = flowers.find((flower) => flower.id === flowerId);
+const show = (flowersList, flowersId) => {
+    const flower = flowersList.find((flower) => flower.id === flowersId);
     return flower.id + ' ' + flower.name + ' ' + flower.priceInCents + ' ' + flower.inStock + ' ' + flower.color + ' ' + flower.origin + ' ' + flower.shelfLife;
   }
 
@@ -71,6 +78,7 @@ const edit = (animals, animalId, updatedAnimal) => {
   module.exports = {
     create,
     index,
+    show,
     destroy,
     edit,
     score
