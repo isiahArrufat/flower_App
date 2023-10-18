@@ -56,17 +56,17 @@ const destroy = (flowersList, flowerId) => {
   }
 }
 
-const edit = (animals, animalId, updatedAnimal) => {
-    const index = flowers.findIndex((flower) => flower.id === flowerId);
+const edit = (flowersList, flowerId, updatedFlower) => {
+    const index = flowersList.findIndex((flower) => flower.id === flowerId);
     if (index > -1) {
-      flowers[index].id = flowerId;
-      flowers[index].name = updatedFlowers;
-      flowers[index].shelfLife = flowerLibary[updatedFlower] || 7;
+      flowersList[index].id = flowerId;
+      flowersList[index].name = updatedFlower;
+      flowersList[index].shelfLife = flowersList[updatedFlower] || 7;
       inform('flower successfully updated');
-      return flowers;
+      return flowersList;
     } else {
       inform('flower not found. No action taken');
-      return flowers;
+      return flowersList;
     }
   }
 
