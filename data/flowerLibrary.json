@@ -6,11 +6,12 @@
     "petal_count": 83,
     "stem_length": 6.41,
     "bloom_time": "2/7/2022",
-    "fragrance": true,
+    "in_stock": true,
     "sun_exposure": "partial sun",
     "watering_needs": "low",
    "soil_type": "clay",
-    "growing_season": "summer"
+    "growing_season": "summer",
+    "priceInCents": 700
   },
   
   {
@@ -19,11 +20,12 @@
     "petal_count": 42,
     "stem_length": 3.14,
     "bloom_time": "11/7/2022",
-    "fragrance": true,
+    "in_stock": true,
     "sun_exposure": "partial sun",
     "watering_needs": "low",
    " soil_type": "clay",
-    "growing_season": "summer"
+    "growing_season": "summer",
+    "priceInCents": 840
   },
 
   {
@@ -32,11 +34,12 @@
     "petal_count": 44,
     "stem_length": 8.24,
     "bloom_time": "2/3/2022",
-    "fragrance": false,
+    "in_stock": false,
     "sun_exposure": "partial sun",
     "watering_needs": "low",
    " soil_type": "loamy",
-    "growing_season": "summer"
+    "growing_season": "summer",
+    "priceInCents": 760
   },
 
   {
@@ -45,11 +48,12 @@
     "petal_count": 68,
     "stem_length": 46.3,
     "bloom_time": "9/10/2022",
-    "fragrance": true,
+    "in_stock": true,
     "sun_exposure": "partial sun",
     "watering_needs": "medium",
    " soil_type": "loamy",
-    "growing_season": "summer"
+    "growing_season": "summer",
+    "priceInCents": 1220
   },
 
   {
@@ -58,11 +62,12 @@
     "petal_count": 96,
     "stem_length": 14.33,
     "bloom_time": "6/27/2022",
-    "fragrance": false,
+    "in_stock": false,
     "sun_exposure": "shade",
     "watering_needs": "low",
    " soil_type": "clay",
-    "growing_season": "spring"
+    "growing_season": "spring",
+    "priceInCents": 1000
   },
 
   {
@@ -71,11 +76,12 @@
     "petal_count": 84,
     "stem_length": 11.84,
     "bloom_time": "10/4/2022",
-    "fragrance": true,
+    "in_stock": true,
     "sun_exposure": "shade",
     "watering_needs": "medium",
     "soil_type": "rocky",
-    "growing_season": "spring"
+    "growing_season": "spring",
+    "priceInCents": 700
   },
 
   {
@@ -84,11 +90,12 @@
     "petal_count": 63,
     "stem_length": 39.11,
     "bloom_time": "6/23/2022",
-    "fragrance": true,
+    "in_stock": true,
     "sun_exposure": "shade",
     "watering_needs": "low",
     "soil_type": "clay",
-    "growing_season": "fall"
+    "growing_season": "fall",
+    "priceInCents": 500
   }
 ]
 

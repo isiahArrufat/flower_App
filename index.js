@@ -2,12 +2,27 @@ const { readJSONFile, writeJSONFile } = require('./src/helpers');
 const flowers = readJSONFile('./data', 'flowersList.json');
 const { create, index, show, destroy, edit, score, } = require('./src/flowersController');
 const inform = console.log;
+const { addItemToCart, calculateTotalPrice, calculateTotalQuantity, displayCart, removeItemFromCart } = require('./cart');
+const cart = require('./cart');
 
 
 
 
 
 const run = () => {
+  const command = process.argv[2];
+
+  if (command === "add-to-cart") {
+      const itemId = process.argv[3];
+      const quantity = parseInt(process.argv[4]);
+      addItemToCart(itemId, quantity);
+      // Display the cart after adding items
+      displayCart();
+  } else if (command === "show-cart") {
+      // Display the cart
+      displayCart();
+  }
+
   let writeToFile = false;
   let updatedFlowers = [];
   const action = process.argv[2];
